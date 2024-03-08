@@ -1,0 +1,109 @@
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ touch index.html
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git init
+Initialized empty Git repository in C:/Users/Patel/OneDrive/Desktop/Assign1/.git/
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ touch foo bar
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ ls
+bar  foo  index.html
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git add foo
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   foo
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bar
+        index.html
+
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git commit -m "Added foo.."
+[master (root-commit) c451de7] Added foo..
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 foo
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git add bar
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   bar
+
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git commit -m "Added bar.."
+[master 23c15e8] Added bar..
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bar
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git log
+commit 23c15e873c83a6d4291e4225cceb4092084760a4 (HEAD -> master)
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 11:47:30 2024 -0600
+
+    Added bar..
+
+commit c451de7cf7be1543204c08711ec6c1d8c7a06767
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 11:46:30 2024 -0600
+
+    Added foo..
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git config --global user.name "Bansari Patel"
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git config --global user.email bansaripatel25897@gmail.com
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git config --global init.defaultBranch main
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git remote add origin https://github.com/bansupatel/Assign1.git
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (master)
+$ git branch -M main
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 419 bytes | 83.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/bansupatel/Assign1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
