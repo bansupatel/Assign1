@@ -13,3 +13,171 @@
         <p class="abc">Call me Ishmael.</p>
     </body>
 </html>
+
+
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git diff
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git commit -m "index.html"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git add index.html
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git commit -m "index.html"
+[main 2e902c7] index.html
+ 1 file changed, 15 insertions(+)
+ create mode 100644 index.html
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git log
+commit 2e902c720bafd828aed17096135e20e51b88a150 (HEAD -> main)
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 12:46:18 2024 -0600
+
+    index.html
+
+commit 4c8b3b00ca04714793ecb5e44f9ce053127fe252 (origin/main)
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 12:18:24 2024 -0600
+
+    Add bazz
+
+commit 23c15e873c83a6d4291e4225cceb4092084760a4
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 11:47:30 2024 -0600
+
+    Added bar..
+
+commit c451de7cf7be1543204c08711ec6c1d8c7a06767
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 11:46:30 2024 -0600
+
+    Added foo..
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 514 bytes | 514.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/bansupatel/Assign1.git
+   4c8b3b0..2e902c7  main -> main
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git diff
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git log -p
+commit 2e902c720bafd828aed17096135e20e51b88a150 (HEAD -> main, origin/main)
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 12:46:18 2024 -0600
+
+    index.html
+
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..5be1303
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,15 @@
++<!DOCTYPE html>
++<html lang="en">
++    <head>
++        <meta charset="UTF-8">
++        <meta name="viewport" content="width=device-width, initial-scale=1.0">
++        <style>
++            .abc {color: red; background-color: green;}
++        </style>
++        <title>A whale of a greeting</title>
++    </head>
++    <body>
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git commit -am "Add some HTML structure"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git diff
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git remote add origin https://github.com/bansupatel/Assign1.git
+error: remote origin already exists.
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git add 1.3.1.txt
+fatal: pathspec '1.3.1.txt' did not match any files
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ touch 1.3.1.txt
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git add 1.3.1.txt
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   1.3.1.txt
+
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git commit -m "1.3.1.txt"
+[main dbe6b1f] 1.3.1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.3.1.txt
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git log
+commit dbe6b1f10c5a066d3ed5800c32951383d00edc12 (HEAD -> main)
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 13:03:34 2024 -0600
+
+    1.3.1.txt
+
+commit 2e902c720bafd828aed17096135e20e51b88a150 (origin/main)
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 12:46:18 2024 -0600
+
+    index.html
+
+commit 4c8b3b00ca04714793ecb5e44f9ce053127fe252
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 12:18:24 2024 -0600
+
+    Add bazz
+
+commit 23c15e873c83a6d4291e4225cceb4092084760a4
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 11:47:30 2024 -0600
+
+    Added bar..
