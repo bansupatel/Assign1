@@ -189,3 +189,66 @@ Date:   Fri Mar 8 11:47:30 2024 -0600
 2.1
 
 I already have a github account.
+
+
+2.2.1
+
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git diff
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git remote add origin https://github.com/bansupatel/Assign1.git
+error: remote origin already exists.
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git add 1.3.1.txt
+fatal: pathspec '1.3.1.txt' did not match any files
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ touch 1.3.1.txt
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git add 1.3.1.txt
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   1.3.1.txt
+
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git commit -m "1.3.1.txt"
+[main dbe6b1f] 1.3.1.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 1.3.1.txt
+
+Patel@DESKTOP-17DSVEV MINGW64 ~/OneDrive/Desktop/Assign1 (main)
+$ git log
+commit dbe6b1f10c5a066d3ed5800c32951383d00edc12 (HEAD -> main)
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 13:03:34 2024 -0600
+
+    1.3.1.txt
+
+commit 2e902c720bafd828aed17096135e20e51b88a150 (origin/main)
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 12:46:18 2024 -0600
+
+    index.html
+
+commit 4c8b3b00ca04714793ecb5e44f9ce053127fe252
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 12:18:24 2024 -0600
+
+    Add bazz
+
+commit 23c15e873c83a6d4291e4225cceb4092084760a4
+Author: Bansari Patel <bansaripatel25897@gmail.com>
+Date:   Fri Mar 8 11:47:30 2024 -0600
+
+    Added bar..
